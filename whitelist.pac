@@ -202,6 +202,7 @@ var white_domains = {"am":{
 "xiapu":1,
 "ychdzx":1
 },"com":{
+	"engineeringvillage":1,
 "0-6":1,
 "0001688":1,
 "001cndc":1,
@@ -9258,6 +9259,8 @@ var white_domains = {"am":{
 "zzph":1,
 "zzrc":1
 },"org":{
+	"acm":1,
+	"ieee":1,
 "0513":1,
 "1000plan":1,
 "1203":1,
