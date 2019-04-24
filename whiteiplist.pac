@@ -8,13 +8,7 @@ var lab_proxy = direct;
  * Copyright (C) 2014 breakwa11
  * https://github.com/breakwa11/gfw_whitelist
  */
-var white_domains = {
-    "com": {
-        "live":1
-    }, "cn": {
-
-    }
-}
+var white_domains ={"net": {"spo-msedge": 1, "l-msedge": 1, "akadns": 1, "live": 1}, "com": {"sharepoint": 1, "microsoft": 1, "live": 1}} 
 
 var lab_domains = {
     "org": {
