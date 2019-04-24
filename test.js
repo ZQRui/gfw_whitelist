@@ -36,7 +36,7 @@ function shExpMatch(a, b) {
 }
 
 function test(url, host) {
-	ret = FindProxyForURLEx(url, host);
+	ret = FindProxyForURL(url, host);
 	if ( typeof(direct) == "undefined" ) {
 		if ( ret.toLowerCase().indexOf("direct") >= 0 ) {
 			return 0;
