@@ -8,7 +8,9 @@ var lab_proxy = direct;
  * Copyright (C) 2014 breakwa11
  * https://github.com/breakwa11/gfw_whitelist
  */
-var white_domains ={"net": {"spo-msedge": 1, "l-msedge": 1, "akadns": 1, "live": 1}, "com": {"sharepoint": 1, "microsoft": 1, "live": 1}} 
+var white_domains = {
+
+}
 
 var lab_domains = {
     "org": {
@@ -16,6 +18,8 @@ var lab_domains = {
         "ieee": 1
     },
     "com": {
+		"prod-endnote": 1,
+		"webofknowledge": 1,
         "sciencedirect": 1,
         "nature": 1,
         "springerlink": 1,
@@ -29,7 +33,8 @@ var lab_domains = {
         "eb": 1
     },
     "net": {
-        "cnki": 1
+        "cnki": 1,
+		"c-msedge": 1,
     }
 }
 var cnIpRange = [
@@ -139,11 +144,11 @@ function FindProxyForURL(url, host) {
         return direct;
     }
 
-
+/*
     if (isInDomains(white_domains, host) === true) {
         return nowall_proxy;
     }
-
+*/
     if (isInDomains(lab_domains, host) === true) {
         return lab_proxy;
     }
